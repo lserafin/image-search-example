@@ -38,6 +38,7 @@
     "onnxruntime-node": "^1.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sharp": "^0.33.4",
     "tsup": "^6.7.0"
   },
   "devDependencies": {

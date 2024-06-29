@@ -9,7 +9,7 @@ interface Route {
   handler: (req: express.Request, res: express.Response) => void;
 }
 
-const imagePaths = await listFiles("./data");
+const imagePaths = await listFiles("./logos");
 
 function getImagesInRange(
   page: number,

@@ -24,6 +24,7 @@ class Embedder {
   // Embeds an image and returns the embedding
   async embed(imagePath: string, metadata?: RecordMetadata): Promise<PineconeRecord> {
     try {
+      console.log("Embedding image", imagePath);
       // Load the image
       const image = await RawImage.read(imagePath);
       // Prepare the image and text inputs

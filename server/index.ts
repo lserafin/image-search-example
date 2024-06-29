@@ -33,7 +33,7 @@ if (isProd) {
 
   app.use(router);
 
-  app.use('/data', express.static(join(__dirname, '../data')));
+  app.use('/logos', express.static(join(__dirname, '../logos')));
 
 
   app.use("/", createProxyMiddleware({

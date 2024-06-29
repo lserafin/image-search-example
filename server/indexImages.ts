@@ -63,7 +63,7 @@ const indexImages = async () => {
     }
 
     await embedder.init("Xenova/clip-vit-base-patch32");
-    const imagePaths = await listFiles("./data");
+    const imagePaths = await listFiles("./logos");
     await embedAndUpsert({ imagePaths, chunkSize: 100 });
     return;
   } catch (error) {
